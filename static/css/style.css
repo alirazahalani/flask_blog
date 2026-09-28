@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+    font-family: 'DM Sans', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 110%;
+    color: rgb(64, 64, 76);
+}
+
+.active {
+    background-color: rgb(230, 226, 226);
+    display: inline;
+}
+
+.flxbox {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul>li {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.mynav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: rgb(207, 208, 209);
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+}

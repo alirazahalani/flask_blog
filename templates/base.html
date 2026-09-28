@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <title>{{ request.endpoint }}</title>
+</head>
+<style>
+</style>
+
+<body>
+    <nav class="mynav">
+        <div>
+            <h2>
+                Aliraza's Blog
+            </h2>
+        </div>
+        <ul class="flxbox">
+            <li class="{%if request.endpoint == 'home'%} active {% endif %}"><a href="/">Home</a></li>
+            <li class="{%if request.endpoint == 'about'%} active {% endif %}"><a href="/about">About</a></li>
+            <li class="{%if request.endpoint == 'register'%} active {% endif %}"><a href="/register">Register</a></li>
+            <li class="{%if request.endpoint == 'login'%} active {% endif %}"><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+    {% block content%}
+    {% endblock content%}
+</body>
+
+</html>
