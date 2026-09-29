@@ -1,10 +1,10 @@
-from flask import Flask, request, render_template
+import flask
 
-app = Flask(__name__)
+app = flask.Flask(__name__)
 
 posts = [
     {
-        'author': "Alireza",
+        'author': "Alireza Halani",
         'title' : "My First Post",
         'content' : "This is the first post.",
         'createdAt' : "29 Dec,2026"
@@ -26,16 +26,16 @@ posts = [
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template('home.html', posts=posts) 
+    return flask.render_template('home.html', posts=posts) 
 
 @app.route('/about')
 def about():
-    return render_template('about.html') 
+    return flask.render_template('about.html') 
 
 @app.route('/register')
 def register():
-    return render_template('register.html') 
+    return flask.render_template('register.html') 
 
 @app.route('/login')
 def login():
-    return render_template('login.html') 
+    return flask.render_template('login.html') 
