@@ -9,7 +9,7 @@
 
 html {
     font-family: 'DM Sans', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 110%;
+    font-size: 100%;
     color: rgb(64, 64, 76);
 }
 
@@ -24,17 +24,45 @@ html {
     gap: 1rem;
 }
 
+.grid-container {
+  max-width:  1024px;
+  display: grid;
+  grid-template-columns: 80% 20%; /* Or 40% 60% depending on your design */
+  margin: 0 auto;
+}
+/* Optional styling to visualize the blocks */
+.main-content { padding: 20px; }
+.sidebar { 
+    margin-top: 2rem;
+    padding: 20px; 
+}
+
+.sidebar > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid gray;
+    padding: 5px;
+
+}
+
 ul {
     list-style-type: none;
 }
 
 a {
     text-decoration: none;
+    color: rgb(57, 64, 88);
+    padding: 2px;
+}
+
+a:hover {
+    background-color: rgb(230, 225, 225);
 }
 
 ul>li {
-    padding: 5px;
-    border-radius: 5px;
+    padding: 4px;
+    border-radius: 4px;
 }
 
 .mynav {
@@ -43,7 +71,7 @@ ul>li {
     justify-content: space-between;
     margin: 0 auto;
     background-color: rgb(207, 208, 209);
-    padding: 20px;
+    padding: 10px;
 }
 
 .container {
@@ -51,4 +79,41 @@ ul>li {
     flex-direction: column;
     max-width: 960px;
     margin: 0 auto;
+}
+
+.register_box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 2rem;
+    background-color: rgb(243, 243, 243);
+    padding: 1rem;
+    border-radius: 3px;
+    gap: 1rem;
+}
+
+input[type=text] {
+    height: 40px;
+    border: none;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+button {
+    height: 40px;
+    border: none;
+    padding: 4px;
+    background-color: silver;
+}
+
+button:hover {
+    background-color: rgb(155, 153, 153);
+    border-radius: 2px;
+}
+
+hr {
+    border: none;
+    height: 0.75px;
+    background-color: silver;
 }

@@ -24,8 +24,25 @@
             <li class="{%if request.endpoint == 'login'%} active {% endif %}"><a href="/login">Login</a></li>
         </ul>
     </nav>
-    {% block content%}
-    {% endblock content%}
+    <div class="grid-container">
+
+        <div class="main-content">
+            {% block content%}
+            {% endblock content%}
+        </div>
+        <div class="sidebar">
+            <div>
+                <h3>Sidebar</h3>
+                <hr>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
+                    <a href="/">Latest Posts</a>
+                    <a href="/">Annoucements</a>
+                    <a href="/">Updates</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
