@@ -93,21 +93,51 @@ ul>li {
     gap: 1rem;
 }
 
-input[type=text] {
+.btn {
     height: 40px;
     border: none;
     padding: 3px;
     border-radius: 2px;
 }
 
-button {
+input[type=email] {
     height: 40px;
     border: none;
-    padding: 4px;
-    background-color: silver;
+    padding: 3px;
+    border-radius: 2px;
 }
 
-button:hover {
+input[type=password] {
+    height: 40px;
+    border: none;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.btn-submit {
+    height: 40px;
+    border: none;
+    padding: 3px;
+    border-radius: 2px;
+    border: 1px solid blue;
+    background-color: rgb(36, 36, 41);
+    color: white;
+}
+
+.success{
+    background-color: rgb(243, 255, 226);
+    max-width: 400px;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+
+.btn-submit:hover {
+    background-color: rgb(18, 19, 20);
+    border-radius: 2px;
+}
+
+input[type=button]:hover {
     background-color: rgb(155, 153, 153);
     border-radius: 2px;
 }

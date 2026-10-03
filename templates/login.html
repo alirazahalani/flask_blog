@@ -1,4 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+<form class="register_box" method="POST" action="" novalidate>
+    <div>
+        <h4>Login</h4>
+        <hr>
+    </div>
+    {{form.hidden_tag()}}
+    {{form.email(placeholder="Email", class='btn')}}
+    {{form.email.errors}}
+    {{form.password(placeholder="Password", class='btn')}}
+    {{form.password.errors}}
+    {{form.submit(class='btn-submit')}}
+</form>
 {% endblock content %}

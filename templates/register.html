@@ -2,15 +2,20 @@
 
 {% block content %}
 
-<div class="register_box">
+<form class="register_box" method="POST" action="" novalidate>
     <div>
         <h4>Join Today</h4>
         <hr>
     </div>
-    <input type="text" placeholder="Username">
-    <input type="text" placeholder="Email">
-    <input type="text" placeholder="Password">
-    <input type="text" placeholder="Confirm Password">
-    <button>Submit</button>
-</div>
+    {{form.hidden_tag()}}
+    {{form.username(placeholder="Username", class='btn')}}
+    {{form.username.errors}}
+    {{form.email(placeholder="Email", class='btn')}}
+    {{form.email.errors}}
+    {{form.password(placeholder="Password", class='btn')}}
+    {{form.password.errors}}
+    {{form.confirm_password(placeholder="Confirm Password", class='btn')}}
+    {{form.confirm_password.errors}}
+    {{form.submit(class='btn-submit')}}
+</form>
 {% endblock content %}
